@@ -18,9 +18,9 @@ public class _2_WebDriverIntroduction {
 		 *                                          |
 		 *                                          |
 		 *         _________________________________|_________________________________
-		 *         |                    |                        |                   |
-		 *         |                    |                        |                   |
-		 *     ChromeDriver       FirefoxDriver              EdgeDriver         SafariDriver
+		 *         |                    |                       |                    |
+		 *         |                    |                       |                    |
+		 *     ChromeDriver       FirefoxDriver             EdgeDriver          SafariDriver
 		 *                                          
 		 *                                          
 		 */
