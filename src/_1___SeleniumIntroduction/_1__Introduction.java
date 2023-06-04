@@ -1,6 +1,6 @@
 package _1___SeleniumIntroduction;
 
-public class _1_Introduction {
+public class _1__Introduction {
 
 	public static void main(String[] args) {
 

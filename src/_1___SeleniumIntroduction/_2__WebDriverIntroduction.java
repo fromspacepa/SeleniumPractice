@@ -1,6 +1,6 @@
 package _1___SeleniumIntroduction;
 
-public class _2_WebDriverIntroduction {
+public class _2__WebDriverIntroduction {
 
 	public static void main(String[] args) {
 
