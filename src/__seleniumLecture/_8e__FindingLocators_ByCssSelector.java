@@ -25,7 +25,13 @@ public class _8e__FindingLocators_ByCssSelector {
 		
 		
 		/*
-		 * ___By.cssSelector(); Locator:
+		 * ___cssSelector Locator:
+		 * By.cssSelector();
+		 * SELENIUM is using Locators that can be turned in as an address which identifies a Web-page Element(s) uniquely within the web-page.
+		 * __Locators are the HTML properties of a web-page elements that represent the address for each element on the web-page, 
+	     * __In SELENIUM Locators are used to identify web elements on a web-page. They are used as an argument passed to the finding element methods.
+	     * __There are several types of Locators an mentioned in the "Locators_Introduction" class. Identifying web elements is a tricky approach.
+	     * __Basically, SELENIUM uses Locators to interact with the web Elements on the web-page. 
 		 * 
 		 * Same as xpath we can use cssSelector locator to find/locate the locators of web-page elements.
 		 * "cssSelector(s)" is a bit faster then xpath, but there are some cons which comes with cssSelector such as follows:

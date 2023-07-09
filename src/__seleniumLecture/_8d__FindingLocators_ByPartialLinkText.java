@@ -25,7 +25,13 @@ public class _8d__FindingLocators_ByPartialLinkText {
 		
 		
 		/*
-		 * ___By.partialLinkText(); LOCATOR:
+		 * ___partialLinkText Locator:
+		 * By.partialLinkText();
+		 * SELENIUM is using Locators that can be turned in as an address which identifies a Web-page Element(s) uniquely within the web-page.
+		 * __Locators are the HTML properties of a web-page elements that represent the address for each element on the web-page, 
+	     * __In SELENIUM Locators are used to identify web elements on a web-page. They are used as an argument passed to the finding element methods.
+	     * __There are several types of Locators an mentioned in the "Locators_Introduction" class. Identifying web elements is a tricky approach.
+	     * __Basically, SELENIUM uses Locators to interact with the web Elements on the web-page. 
 		 * 
 		 *    partialLinkText __ (By.partialLinkText(""));
 		 *    ___Using the "partiaLinkText" is not recommended, because it creates confusion. This locator is also used to interact with link(s) on the web-page.

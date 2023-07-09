@@ -31,13 +31,13 @@ public class _8a__FindingLocators_Byid {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));// SELENIUM 4 new method for "implicittlyWait".
 		
 		/*
-		 * ___By.id(); LOCATOR:
-		 * 
+		 * ___id Locator:
+		 * By.id(); 
 		 * SELENIUM is using Locators that can be turned in as an address which identifies a Web-page Element(s) uniquely within the web-page.
 		 * __Locators are the HTML properties of a web-page elements that represent the address for each element on the web-page, 
-		 * __In SELENIUM Locators are used to identify web elements on a web-page. They are used as an argument passed to the finding element methods.
-		 * __There are several types of Locators, which are explained below here. Identifying web elements is a tricky approach.
-		 * __Basically, SELENIUM uses Locators to interact with the web Elements on the web-page. 
+	     * __In SELENIUM Locators are used to identify web elements on a web-page. They are used as an argument passed to the finding element methods.
+	     * __There are several types of Locators an mentioned in the "Locators_Introduction" class. Identifying web elements is a tricky approach.
+	     * __Basically, SELENIUM uses Locators to interact with the web Elements on the web-page. 
 		 *  
 		 *    id Locator _______________ (By.id(""));
 		 *    ___Locates elements whose id attribute matches the search value of web-page element.

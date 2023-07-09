@@ -13,6 +13,20 @@ public class _9a__HandlingRadioButton {
 	public static void main(String[] args) throws InterruptedException {
 		
 		
+		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
+		//System.setProperty("webdriver.edge.driver", ".\\drivers\\msedgedriver.exe");
+		//System.setProperty("webdriver.firefox.driver", ".\\drivers\\geckodriver.exe");
+        WebDriver driver = new ChromeDriver();
+		//WebDriver driver1 = new EdgeDriver();
+		//WebDriver driver2 = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.get("http://tek-school.com/retail/");
+		Thread.sleep(2000);
+		
+		
 		/*
 		 * __Handling Radio Button (O):
 		 * 
@@ -46,35 +60,7 @@ public class _9a__HandlingRadioButton {
 		 * Following here is the Example of locating the locator of radioButton element:
 		 */
 		
-		
-        //This is to set the property for all three web browsers: Chrome-Edge-Firefox
-		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
-		//System.setProperty("webdriver.edge.driver", ".\\drivers\\msedgedriver.exe");
-		//System.setProperty("webdriver.firefox.driver", ".\\drivers\\geckodriver.exe");
-        
-		//This is to instantiate all three WebDrivers: ChromeDriver-EdgeDriver-FirefoxDriver:
-		WebDriver driver = new ChromeDriver();
-		//WebDriver driver1 = new EdgeDriver();
-		//WebDriver driver2 = new FirefoxDriver();
-		
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		
-		/*
-		 * pageLoadTimeout method:
-		 * driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS); //
-		 * Selenium 4 new method for "pageLoadTimeout" is the following:
-		 */		
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-		/*
-		 * implicitlyWait method:
-		 * driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS); // Selenium
-		 * 4 new method for "implicittlyWait" is the following:
-		 */		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
-		driver.get("http://tek-school.com/retail/");
-		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[@title='My Account']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[text()='Register']")).click();
