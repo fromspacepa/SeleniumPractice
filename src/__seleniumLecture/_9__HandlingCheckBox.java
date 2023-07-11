@@ -14,12 +14,7 @@ public class _9__HandlingCheckBox {
 			System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
 			//System.setProperty("webdriver.firefox.driver", ".\\drivers\\geckodriver.exe");
 			//System.setProperty("webdriver.edge.driver", ".\\drivers\\msedgedriver.exe");
-			
 			WebDriver driver = new ChromeDriver();
-			//WebDriver driver1 = new FirefoxDriver();
-			//WebDriver driver2 = new EdgeDriver();
-			
-			//driver.get("https://www.google.com/");
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
@@ -65,8 +60,9 @@ public class _9__HandlingCheckBox {
 			 */
 			
 			driver.findElement(By.xpath("//a[@title='My Account']")).click();
+			Thread.sleep(2000);
 			driver.findElement(By.xpath("//a[text()='Register']")).click();
-
+			Thread.sleep(2000);
 		   //Finding the locator of a checkBox and checking the status of it, if it displayed, enabled, and selected before and after clicked.
 		    WebElement checkBox = driver.findElement(By.xpath("//input[@name='agree']"));
 		    //Usage of "isDisplayed();" method:

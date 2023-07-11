@@ -17,8 +17,6 @@ public class _9a__HandlingRadioButton {
 		//System.setProperty("webdriver.edge.driver", ".\\drivers\\msedgedriver.exe");
 		//System.setProperty("webdriver.firefox.driver", ".\\drivers\\geckodriver.exe");
         WebDriver driver = new ChromeDriver();
-		//WebDriver driver1 = new EdgeDriver();
-		//WebDriver driver2 = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
@@ -28,17 +26,16 @@ public class _9a__HandlingRadioButton {
 		
 		
 		/*
-		 * __Handling Radio Button (O):
+		 * __Handling radioButton (O):
 		 * 
-		 * When you are handling "radioButton" element of web application using Selenium Testing Framework, you have to keep in mind that 
-		 * before handling/clicking on specific radioButton, you need to check the state/status of it. The purpose of checking the status of
-		 * radioButton is to see or make sure that the radioButton is Displayed, Enabled, and not Selected before you click on it; So, for 
-		 * that we have to use the following methods:
+		 * When you are handling "radioButton" element of web application using SELENIUM Testing Framework, you have to keep in mind that 
+		 * before handling/clicking on specific radioButton, you need to check the status of it, to make sure that the radioButton is Displayed, 
+		 * Enabled, and not Selected before you click on it. So, for that we have to use the following methods:
 		 * 1) isDisplayed();
 		 * 2) isEnabled();
 		 * 3) isSelected();
-		 * And all these method will give or printout you the boolean results in the console of your Eclipse;
-		 * So, in order to get the boolean result of all these above methods, you need to use them in boolean data type such as follows:
+		 * And all these method will give or printout you the boolean results in the console of your Eclipse, so in order to get the boolean result 
+		 * of all these above methods, you need to use them in boolean data type such as follows:
 		 * 
 		 * 1st) Usage of "isDisplayed();" method:
 		 *      boolean isDisplayed = radioButton.isDisplayed();
@@ -53,8 +50,7 @@ public class _9a__HandlingRadioButton {
 		 * And then you can use your "click();" method after all these above.
 		 * 
 		 * NOTE:
-		 * With radioButtons we can only check one radioButton at a time, 
-		 * Means that when you have more than one radioButtons in your web page
+		 * With radioButtons we can only check one radioButton at a time, Means that when you have more than one radioButtons in your web page
 		 * you would need to perform the above action for each radioButtons.
 		 * 
 		 * Following here is the Example of locating the locator of radioButton element:
@@ -66,9 +62,9 @@ public class _9a__HandlingRadioButton {
 		driver.findElement(By.xpath("//a[text()='Register']")).click();
 		Thread.sleep(2000);
 		
-		//Finding the locator of a radioButton and checking the status of it, if it displayed, enabled, and selected before and after clicked.
+		//First you would need to make an object of the element:
 		WebElement radioButton = driver.findElement(By.xpath("//label[@class='radio-inline']//input[@value='1']"));
-		 
+		//Finding the locator of a radioButton and checking the status of it, if it displayed, enabled, and selected before and after clicked.
 		  System.out.println("******Radio Button Status ******");
 		  boolean isdisplayed = radioButton.isDisplayed();
 		  System.out.println("radioButton displayed before clicked:\t" +isdisplayed); 
