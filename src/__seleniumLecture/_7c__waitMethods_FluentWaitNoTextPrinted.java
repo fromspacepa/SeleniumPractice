@@ -92,7 +92,7 @@ public class _7c__waitMethods_FluentWaitNoTextPrinted {
 		fluentWait.until(ExpectedConditions.visibilityOf(text));
 		System.out.println(text.getText());
 
-
+        Thread.sleep(3000);
 		driver.close();
 	}
 

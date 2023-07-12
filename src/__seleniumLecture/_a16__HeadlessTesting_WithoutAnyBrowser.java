@@ -5,7 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class _a15__HeadlessTesting_WithoutAnyBrowser {
+public class _a16__HeadlessTesting_WithoutAnyBrowser {
 
 	public static void main(String[] args) {
 
