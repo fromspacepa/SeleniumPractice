@@ -10,7 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class a_17__TakingScreenShot {
+public class _a17__TakingScreenShot {
 	
 	/*
 	 * Taking ScreenShot ___Taking ScreenShot of your automation test case with SELENIUM:

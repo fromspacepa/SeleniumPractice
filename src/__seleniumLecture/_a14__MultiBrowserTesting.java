@@ -55,7 +55,7 @@ public class _a14__MultiBrowserTesting {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
-		Thread.sleep(2000);
+		Thread.sleep(6000);
 		driver.close();
 	
 	}
