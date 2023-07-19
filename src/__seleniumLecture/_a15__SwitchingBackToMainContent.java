@@ -19,30 +19,28 @@ public class _a15__SwitchingBackToMainContent {
 		 * Main context page is the page from where we had switched to the frame or new window and now 
 		 * we want to switch back to the main content page.
 		 * 
-		 * MORE INFO COMING SOON....
-		 * 
 		 */
 		
 		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 	    driver.manage().window().maximize();
+		driver.get("https://www.w3schools.com/js/tryit.asp?filename=tryjs_alert2");
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.get("https://www.w3schools.com/js/tryit.asp?filename=tryjs_alert2");
 		WebElement frame = driver.findElement(By.id("iframeResult"));
 		driver.switchTo().frame(frame);
 		FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver)
-			.withTimeout(Duration.ofSeconds(20))
+			.withTimeout(Duration.ofSeconds(10))
 			.pollingEvery(Duration.ofSeconds(1));
 		
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Try it']")));
 		WebElement tryIt = driver.findElement(By.xpath("//button[text()='Try it']"));
 		tryIt.click();
-		
+		Thread.sleep(2000);
 		//to accept
-        //driver.switchTo().alert().accept();
+        driver.switchTo().alert().accept();
 		//to dismiss
-		driver.switchTo().alert().dismiss();
+		//driver.switchTo().alert().dismiss();
 
 		Thread.sleep(2000);
 		driver.switchTo().defaultContent();
@@ -50,7 +48,8 @@ public class _a15__SwitchingBackToMainContent {
 		WebElement text = driver.findElement(By.xpath("//button[@id='runbtn']"));
 		System.out.println(text.getText());
 		Thread.sleep(6000);
-		driver.close();
+		//driver.close();
+		driver.quit();
 	}
 
 }

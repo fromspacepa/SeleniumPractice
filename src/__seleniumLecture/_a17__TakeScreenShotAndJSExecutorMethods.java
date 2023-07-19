@@ -18,16 +18,15 @@ public class _a17__TakeScreenShotAndJSExecutorMethods {
 	/*
 	 * Taking ScreenShot & Using the JavaScript Executor together:
 	 * 
-	 * If you want to take ScreenShot of your test case, you could use the help of JavaScript Executor.
+	 * If you want to take ScreenShot of your test case, you could use the help of JavaScript Executor too.
 	 * JavaScript Executor helps with highlighting you desired tabs of the web-page (AmazonPage).
 	 * In order to do that, you would need to create the JavaScript Executor method.
 	 * JavaScript or JavaScript Executor is faster/stronger, because it directly speaks/interact with DOM,
-	 * because the DOM itself is written in JavaScript XML language. So, that is why it is very helpful to use
+	 * because the DOM itself is written in JavaScript language and XML tags. So, that is why it is very helpful to use
 	 * the JavaScript Executor in your Automation Test Project.
 	 * 
 	 * NOTE:
-	 * JavaScript Executor is an interface and it comes with some methods. More info about JavaScript Executor methods 
-	 * are coming soon....
+	 * JavaScript Executor is an interface and it comes with some methods. 
 	 */
 
 	public static WebDriver driver;
@@ -44,9 +43,9 @@ public class _a17__TakeScreenShotAndJSExecutorMethods {
         //highlightelementBorderAndBackground(bestSeller);
 		takeScreenShot("AmazonHomePage1");
 		Thread.sleep(3000);
-        //clickWithJSE(bestSeller);
-        //scrolldownPage();
-        //takeScreenShot("AmazonHomePage2");
+        clickWithJSE(bestSeller);
+        scrolldownPage();
+        takeScreenShot("AmazonHomePage2");
 
 		Thread.sleep(6000);
 		driver.close();
@@ -62,21 +61,17 @@ public class _a17__TakeScreenShotAndJSExecutorMethods {
 	}
 	// The reason we use JSExecutor
 	// 1 - The web browser is implementing JavaScrip language and by using
-	// JSExecutor
-	// it is eary for JSExecutor to interact with element in the web browser
-	// 2 - When we multi browser testing, we will be writing our locators (xpaths,
-	// cssSelector, etc...)
+	// JSExecutor it is eary for JSExecutor to interact with element in the web browser
+	// 2 - When we multi browser testing, we will be writing our locators (xpaths, cssSelector, etc...)
 	// but we will be collecting locator and use one browser (chrome), but when we
-	// execute our test
-	// in firefox, we may not be able to click or sendkeys or do some other actions,
-	// that is when we need
-	// JSExecutor
+	// execute our test in firefox, we may not be able to click or sendkeys or do some other actions,
+	// that is when we need JSExecutor.
 
 	// method for taking screenshots
 	public static void takeScreenShot(String fileName) throws IOException {
 		// we need to create a folder at project level and store the path here so that
 		// when even we take screenshots, they are all saved in that specific folder
-		String path = ".\\screenshots\\";
+		String path = ".\\screenshots";
 		// I create object of the file class
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// After taking the screenshot, take the file and store it in a location in my
@@ -85,7 +80,7 @@ public class _a17__TakeScreenShotAndJSExecutorMethods {
 		FileUtils.copyFile(file, new File(path + fileName + ".png"));
 	}
 
-	// JSExecutor methods start
+	// JSExecutor methods starts following here:
 	// .click()
 	// if the .click() does not work, then we get the help JSExecuter
 	public static void clickWithJSE(WebElement element) {
@@ -122,6 +117,8 @@ public class _a17__TakeScreenShotAndJSExecutorMethods {
 	public static void sendKeys(WebElement element, String value) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].value='" + value + "'", element);
+		
 	}
+	
 
 }

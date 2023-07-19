@@ -10,9 +10,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class _5c__getLocationSizeRectMethods {
+public class _5c__getLocationgetSizegetRectMethods {
 
 	public static void main(String[] args) {
+		
+		/*
+		 * Following are some of the methods that needs to practiced
+		 * getLocation();
+		 * getRect();
+		 * getSize();
+		 */
 		
 		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();

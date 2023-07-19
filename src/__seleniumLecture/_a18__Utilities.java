@@ -13,6 +13,25 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class _a18__Utilities {
+	
+	
+	/*
+	 * Utilities Class:
+	 * 
+	 * We you are working on BDD FrameWork or any frameWork, you then create a  folder and named as: Utilities.
+	 * This Utilities folder will be a contained of "Utilities" class and in the mentioned you would have create 
+	 * or created as many as frequently useful methods for future use of your framework and save all the methods 
+	 * inside mentioned Utilities class. 
+	 * 
+	 * Below here are some of the methods that useful in the framework, such as:
+	 * -> TakingScreenShot
+	 * -> Click method ____ (Using the help of Java Script Executor interface by writing the Java Script language)
+	 * -> Giving Border to an element ____ (Using the help of Java Script Executor interface by writing the Java Script language)
+	 * -> Highlighting element's background ____ (Using the help of Java Script Executor interface by writing the Java Script language)
+	 * -> Giving Border and Highighting an element ____ (Using the help of Java Script Executor interface by writing the Java Script language)
+	 * -> Scrolling down the page ____ (Using the help of Java Script Executor interface by writing the Java Script language)
+	 * -> Sending Keys ____ (Using the help of Java Script Executor interface by writing the Java Script language)
+	 */
 
 	public static WebDriver driver;
 

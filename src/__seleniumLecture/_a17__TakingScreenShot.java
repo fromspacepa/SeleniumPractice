@@ -45,7 +45,7 @@ public class _a17__TakingScreenShot {
 	    //method for taking screenshots
 	    public static void takeScreenShot(String fileName) throws IOException {
 		//we need to create a folder at project level and store the path here so that
-		//when even we take screenshots, they are all saved in that specific folder
+		//whenever we take screenshots, they are all saved in that specific folder.
 		String path = ".\\screenshots";
 		//I create object of the file class
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

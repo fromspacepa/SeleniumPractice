@@ -7,7 +7,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class _a19__WhenWeCanUseGetTagName {
+public class _5b__getTagNamegetTextMethods {
+	
+	/*
+	 * Following are some of the methods that needs to be practiced:
+	 * 
+	 */
 
 	public static void main(String[] args) throws InterruptedException {
 		
@@ -31,6 +36,11 @@ public class _a19__WhenWeCanUseGetTagName {
 
 
 
+	}
+
+	private static void getTagName() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
