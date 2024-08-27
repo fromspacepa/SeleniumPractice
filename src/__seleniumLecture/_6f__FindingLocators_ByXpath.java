@@ -117,7 +117,7 @@ public class _6f__FindingLocators_ByXpath {
 		//driver1.findElement(By.xpath("//input[ends-with(@type,'bmit')]")).click();//This is not going to work.
 		System.out.println("TecSchool Retail Login to:\t" + driver1.getTitle());
 		Thread.sleep(2000);
-		driver1.quit();
+		//driver1.quit();
 
 	}
 

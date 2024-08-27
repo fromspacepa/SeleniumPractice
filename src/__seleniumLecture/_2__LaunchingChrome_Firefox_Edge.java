@@ -12,13 +12,13 @@ public class _2__LaunchingChrome_Firefox_Edge {
 		 * 2ndly you need to instantiate the desired (ChromeDriver, EdgeDriver, or FirefoxDriver) class on WebDriver interface.
 		 */
 		
-		//System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
 		//System.setProperty("webdriver.edge.driver", ".\\drivers\\msedgedriver.exe");
-		System.setProperty("webdriver.firefox.driver", ".\\drivers\\geckodriver.exe");
+		//System.setProperty("webdriver.firefox.driver", ".\\drivers\\geckodriver.exe");
 
-		//WebDriver driver = new ChromeDriver();//Launching chrome browser.
+		WebDriver driver = new ChromeDriver();//Launching chrome browser.
 		//WebDriver driver1 = new EdgeDriver();//Launching edge browser.
-		WebDriver driver2 = new FirefoxDriver();//Launching firefox browser.
+		//WebDriver driver2 = new FirefoxDriver();//Launching firefox browser.
 
 }
 }
